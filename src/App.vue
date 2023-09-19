@@ -1,11 +1,14 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import init, { add } from 'anychain-wasm';
+import init, { add, address_from_public_key } from 'anychain-wasm';
 import {onMounted} from 'vue';
 onMounted( () => {
   init().then( () => {
     let sum = add(2,3);
-    console.log(sum);
+    // console.log(sum);
+    let pub_key = "0x0299bb27e93fba02d13d78b1d7807cc811266e31e7b6feae3e09d42d49482fda95";
+    let pub_addr = address_from_public_key(pub_key);
+    console.log("public address is:", pub_addr);
   })
 })
 </script>
