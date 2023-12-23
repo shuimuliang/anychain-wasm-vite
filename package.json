@@ -9,12 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "anychain-wasm": "^0.1.2",
+    "anychain-wasm": "link:pkg",
     "vue": "^3.3.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.4.5",
-    "anychain-wasm": "^0.1.2"
+    "vite": "^4.4.5"
   }
 }
